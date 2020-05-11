@@ -25,7 +25,7 @@ public class ReviewUI {
             if (option == 1) {
                 viewReviews();
             } else if (option == 2) {
-
+                addReview();
             }
         }
     }
