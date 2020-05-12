@@ -25,16 +25,16 @@ public class ReviewUI {
             if (option == 1) {
                 viewReviews();
             } else if (option == 2) {
-
+                addReview();
             }
         }
     }
 
     public void viewReviews() {
-        List<ReviewModel> reviews = reviewService.viewReviews();
-        reviews.stream().forEach(parameter -> System.out.println("Author - " + parameter.getBook().getTitle() +
-                "\nBOOK: " + parameter.getBook().getTitle() +
-                "\nReviews - " + parameter.getBook().getReview().getScore() + "\n" + parameter.getBook().getReview().getComment()));
+        List<BookModel> bookModels = bookService.getBooks();
+        bookModels.stream().forEach(parameter -> System.out.println("Author - " + parameter.getAuthor().getLastName() +
+                "\nBOOK: " + parameter.getTitle() +
+                "\nScore - " + parameter.getReview().getScore() + "\nComments - " + parameter.getReview().getComment()));
     }
 
     public void addReview() {
@@ -45,8 +45,11 @@ public class ReviewUI {
         System.out.println("How would you rate this book? 1 - 5 ");
         review.setBook(book);
         review.setScore(scanner.nextInt());
+        scanner.nextLine();
         System.out.println("Any thoughts about this book? Let us know.");
         review.setComment(scanner.nextLine());
+        book.setReview(review);
+
         reviewService.addReview(book, review);
     }
 
@@ -55,7 +58,7 @@ public class ReviewUI {
         List<BookModel> bookModelList = bookService.getBooks();
         bookModelList.stream().forEach(bookModel ->
                 System.out.println(bookModel.getTitle() +
-                        " By " + bookModel.getAuthor().getFirstName() +
+                        " - " + bookModel.getAuthor().getFirstName() +
                         " " + bookModel.getAuthor().getLastName()));
     }
 }

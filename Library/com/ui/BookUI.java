@@ -65,7 +65,7 @@ public class BookUI {
 
         System.out.println("Enter author last name");
         String lastName = scanner.nextLine();
-        System.out.println("Do you want to rate this book? Y/N");
+        /* System.out.println("Do you want to rate this book? Y/N");
         String option = scanner.next();
         if (option.equalsIgnoreCase("Y")) {
             System.out.println("How would you rate it? 1 - 5 ");
@@ -77,6 +77,8 @@ public class BookUI {
         } else if (option.equalsIgnoreCase("N")) {
             System.out.println("No problem.");
         }
+        
+         */
 
         Optional<AuthorModel> authorModelOptional = authorService.findByName(firstName, lastName);
         if (!authorModelOptional.isPresent()) {

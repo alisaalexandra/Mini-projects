@@ -15,7 +15,7 @@ public abstract class ModelDao<T extends Model> implements Dao<T> {
 
     }
 
-    @Override
+    //@Override
     public void add(T t) {
         List<T> list = fileScanner.read(fileName);
         list.add(t);

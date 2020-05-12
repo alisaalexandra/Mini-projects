@@ -4,8 +4,8 @@ public class BookModel extends Model {
 
     private String title;
     private String description;
-    private AuthorModel author;
-    private ReviewModel review;
+    private AuthorModel author = new AuthorModel();
+    private ReviewModel review = new ReviewModel();
 
     public BookModel(String title, AuthorModel authorModel) {
         this.title = title;

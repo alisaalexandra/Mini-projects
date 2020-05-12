@@ -5,6 +5,7 @@ public class AuthorModel extends Model {
     private String firstName;
     private String lastName;
 
+    public AuthorModel(){}
     public AuthorModel(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;

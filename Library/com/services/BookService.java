@@ -18,6 +18,9 @@ public class BookService {
         bookDao.add(book);
     }
 
+    public Optional<BookModel> findBookByName(String name) {
+        return bookDao.getAll().stream().filter(parameter -> parameter.getTitle().equalsIgnoreCase(name)).findFirst();
+    }
     public List<BookModel> getBooks() {
         return bookDao.getAll().stream()
                 .sorted(Comparator.comparing(
