@@ -1,4 +1,4 @@
-package com.company.sda.petclinic.persistence.dao;
+package com.petclinic.persistence.dao;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,6 +1,6 @@
-package com.company.sda;
+package com;
 
-import com.company.sda.petclinic.ui.PetAppUI;
+import com.petclinic.ui.PetAppUI;
 
 public class Main {
 

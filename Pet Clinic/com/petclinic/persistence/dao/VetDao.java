@@ -1,6 +1,6 @@
-package com.company.sda.petclinic.persistence.dao;
+package com.petclinic.persistence.dao;
 
-import com.company.sda.petclinic.persistence.model.VetModel;
+import com.petclinic.persistence.model.VetModel;
 
 public class VetDao extends ModelDao<VetModel>{
     public VetDao() {

@@ -1,4 +1,4 @@
-package com.company.sda.petclinic.persistence.model;
+package com.petclinic.persistence.model;
 
 public class ConsultModel extends Model {
     private VetModel vet = new VetModel();

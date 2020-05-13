@@ -1,8 +1,7 @@
-package com.company.sda.petclinic.services;
+package com.petclinic.services;
 
-import com.company.sda.petclinic.persistence.dao.VetDao;
-import com.company.sda.petclinic.persistence.model.ConsultModel;
-import com.company.sda.petclinic.persistence.model.VetModel;
+import com.petclinic.persistence.dao.VetDao;
+import com.petclinic.persistence.model.VetModel;
 
 import java.util.Comparator;
 import java.util.List;

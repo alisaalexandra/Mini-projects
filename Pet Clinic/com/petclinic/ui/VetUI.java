@@ -1,8 +1,7 @@
-package com.company.sda.petclinic.ui;
+package com.petclinic.ui;
 
-import com.company.sda.petclinic.persistence.model.VetModel;
-import com.company.sda.petclinic.services.VetService;
-import jdk.swing.interop.SwingInterOpUtils;
+import com.petclinic.persistence.model.VetModel;
+import com.petclinic.services.VetService;
 
 import java.util.List;
 import java.util.Scanner;

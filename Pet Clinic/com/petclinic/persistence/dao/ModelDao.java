@@ -1,6 +1,6 @@
-package com.company.sda.petclinic.persistence.dao;
+package com.petclinic.persistence.dao;
 
-import com.company.sda.petclinic.persistence.model.Model;
+import com.petclinic.persistence.model.Model;
 
 import java.util.List;
 import java.util.Optional;

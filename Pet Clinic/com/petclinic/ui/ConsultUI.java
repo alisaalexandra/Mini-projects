@@ -1,11 +1,11 @@
-package com.company.sda.petclinic.ui;
+package com.petclinic.ui;
 
-import com.company.sda.petclinic.persistence.model.ConsultModel;
-import com.company.sda.petclinic.persistence.model.PetModel;
-import com.company.sda.petclinic.persistence.model.VetModel;
-import com.company.sda.petclinic.services.ConsultService;
-import com.company.sda.petclinic.services.PetService;
-import com.company.sda.petclinic.services.VetService;
+import com.petclinic.persistence.model.ConsultModel;
+import com.petclinic.persistence.model.PetModel;
+import com.petclinic.persistence.model.VetModel;
+import com.petclinic.services.ConsultService;
+import com.petclinic.services.PetService;
+import com.petclinic.services.VetService;
 
 import java.util.List;
 import java.util.Scanner;

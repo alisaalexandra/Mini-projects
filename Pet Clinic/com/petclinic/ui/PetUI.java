@@ -1,9 +1,8 @@
-package com.company.sda.petclinic.ui;
+package com.petclinic.ui;
 
-import com.company.sda.petclinic.persistence.model.PetModel;
-import com.company.sda.petclinic.services.PetService;
+import com.petclinic.persistence.model.PetModel;
+import com.petclinic.services.PetService;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 

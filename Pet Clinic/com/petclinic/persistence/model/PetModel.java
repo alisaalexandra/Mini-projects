@@ -1,6 +1,4 @@
-package com.company.sda.petclinic.persistence.model;
-
-import java.util.Date;
+package com.petclinic.persistence.model;
 
 public class PetModel extends Model {
     private String race;

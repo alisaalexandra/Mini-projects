@@ -1,7 +1,7 @@
-package com.company.sda.petclinic.services;
+package com.petclinic.services;
 
-import com.company.sda.petclinic.persistence.dao.PetDao;
-import com.company.sda.petclinic.persistence.model.PetModel;
+import com.petclinic.persistence.dao.PetDao;
+import com.petclinic.persistence.model.PetModel;
 
 import java.util.List;
 
